@@ -8,7 +8,7 @@ import robin.oester.jumpandrun.server.tools.GameState;
 public class WaitingCountdown extends Countdown {
 	
 	public WaitingCountdown() {
-		super(30);																		//set the waiting countdown to 40 seconds
+		super(60);																		//set the waiting countdown to 40 seconds
 	}
 
 	@Override

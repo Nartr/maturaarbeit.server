@@ -55,7 +55,6 @@ public class ServerStarter {
 	private static long worldRecord;
 
 	public static void main(String[] args) {
-		ServerStarter.cal = Calendar.getInstance();										//open calendar
 		ServerStarter.format = new SimpleDateFormat("HH:mm:ss");						//create format for console
 		
 		ServerStarter.server = new Server();											//create server to connect
@@ -95,6 +94,7 @@ public class ServerStarter {
 	}
 	
 	public static void sendMessage(String msg) {
+		cal = Calendar.getInstance();													//open Calendar
 		System.out.println("[" + format.format(cal.getTime()) + "]: " + msg);			//method to print a server message
 	}
 	
